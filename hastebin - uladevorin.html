@@ -1,0 +1,171 @@
+
+<!-- saved from url=(0035)https://hastebin.com/uladevorin.lua -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>hastebin - uladevorin</title>
+
+<link rel="stylesheet" type="text/css" href="./hastebin - uladevorin_files/solarized_dark.css">
+<link rel="stylesheet" type="text/css" href="./hastebin - uladevorin_files/application.css">
+<script type="text/javascript" src="./hastebin - uladevorin_files/jquery.min.js.ดาวน์โหลด"></script>
+<script type="text/javascript" src="./hastebin - uladevorin_files/highlight.min.js.ดาวน์โหลด"></script>
+<script type="text/javascript" src="./hastebin - uladevorin_files/application.min.js.ดาวน์โหลด"></script>
+<meta name="robots" content="noindex,nofollow">
+<script type="text/javascript">
+			var app = null;
+			// Handle pops
+			var handlePop = function(evt) {
+				var path = evt.target.location.pathname;
+				if (path === '/') { app.newDocument(true); }
+				else { app.loadDocument(path.substring(1, path.length)); }
+			};
+			// Set up the pop state to handle loads, skipping the first load
+			// to make chrome behave like others:
+			// http://code.google.com/p/chromium/issues/detail?id=63040
+			setTimeout(function() {
+				window.onpopstate = function(evt) {
+					try { handlePop(evt); } catch(err) { /* not loaded yet */ }
+				};
+			}, 1000);
+			// Construct app and load initial path
+			$(function() {
+				app = new haste('hastebin', { twitter: true });
+				handlePop({ target: window });
+			});
+		</script>
+</head>
+<body>
+<ul id="messages"></ul>
+<div id="key">
+
+<div id="box1">
+<a href="https://hastebin.com/about.md" class="logo"></a>
+</div>
+<div id="box2">
+<button class="save function button-picture">Save<div id="pointer" style="display: none;"></div></button>
+<button class="new function button-picture enabled">New</button>
+<button class="duplicate function button-picture enabled">Duplicate &amp; Edit</button>
+<button class="raw function button-picture enabled">Just Text</button>
+<button class="twitter function button-picture enabled">Twitter</button>
+</div>
+<div id="box3" style="display: none;">
+<div class="label">Save</div>
+<div class="shortcut">control + s</div>
+</div>
+</div>
+<div id="linenos">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40<br>41<br>42<br>43<br>44<br>45<br>46<br>47<br>48<br>49<br>50<br>51<br>52<br>53<br>54<br>55<br>56<br>57<br>58<br>59<br>60<br>61<br>62<br>63<br>64<br>65<br>66<br>67<br>68<br>69<br>70<br>71<br>72<br>73<br>74<br>75<br>76<br>77<br>78<br>79<br>80<br>81<br>82<br>83<br>84<br>85<br>86<br>87<br>88<br>89<br>90<br>91<br>92<br>93<br>94<br>95<br>96<br>97<br>98<br>99<br>100<br>101<br>102<br>103<br>104<br>105<br>106<br>107<br>108<br>109<br>110<br>111<br>112<br>113<br></div>
+<pre id="box" style="display: block;" class="hljs" tabindex="0"><code><span class="hljs-comment">-- SuperHack for Crisis Action v2.5-0 by Aufar_R</span>
+
+<span class="hljs-comment">-- LIST OF CODES</span>
+
+<span class="hljs-comment">-- Time jump</span>
+
+input = <span class="hljs-number">5</span>:<span class="hljs-number">0</span> <span class="hljs-keyword">or</span> <span class="hljs-number">300</span>
+
+<span class="hljs-comment">-- Wall hack</span>
+
+search <span class="hljs-number">1008981770</span>;<span class="hljs-number">1017370378</span>
+
+refine <span class="hljs-number">1008981770</span>
+
+edit <span class="hljs-number">1</span>,<span class="hljs-number">075</span>,<span class="hljs-number">750</span>,<span class="hljs-number">000</span>
+
+<span class="hljs-comment">-- 1Hit hack</span>
+
+search <span class="hljs-number">1008981770</span>;<span class="hljs-number">100</span>;<span class="hljs-number">1061997773</span>
+
+refine <span class="hljs-number">1</span>,<span class="hljs-number">008</span>,<span class="hljs-number">981</span>,<span class="hljs-number">770</span>;<span class="hljs-number">100</span>
+
+edit look below
+
+clear results
+
+search <span class="hljs-number">1008981770</span>;<span class="hljs-number">100</span>;<span class="hljs-number">1053609165</span>
+
+refine <span class="hljs-number">1</span>,<span class="hljs-number">008</span>,<span class="hljs-number">981</span>,<span class="hljs-number">770</span>;<span class="hljs-number">100</span>
+
+edit look below
+
+clear results
+
+search <span class="hljs-number">-1</span>,<span class="hljs-number">082</span>,<span class="hljs-number">130</span>,<span class="hljs-number">432</span>;<span class="hljs-number">100</span>;<span class="hljs-number">1</span>,<span class="hljs-number">036</span>,<span class="hljs-number">831</span>,<span class="hljs-number">949</span>
+
+refine <span class="hljs-number">-1</span>,<span class="hljs-number">082</span>,<span class="hljs-number">130</span>,<span class="hljs-number">432</span>;<span class="hljs-number">100</span>
+
+edit look below
+
+edit <span class="hljs-keyword">for</span> this hack = <span class="hljs-number">2</span>,<span class="hljs-number">139</span>,<span class="hljs-number">000</span>,<span class="hljs-number">000</span> <span class="hljs-keyword">or</span> <span class="hljs-number">2</span>,<span class="hljs-number">139</span>,<span class="hljs-number">666</span>,<span class="hljs-number">666</span>
+
+<span class="hljs-comment">-- Custom 1Hit hack</span>
+
+search <span class="hljs-number">-1</span>,<span class="hljs-number">082</span>,<span class="hljs-number">130</span>,<span class="hljs-number">432</span>;<span class="hljs-number">100</span>;weapon code
+
+refine <span class="hljs-number">-1</span>,<span class="hljs-number">082</span>,<span class="hljs-number">130</span>,<span class="hljs-number">432</span>;<span class="hljs-number">100</span>
+
+edit look below
+
+<span class="hljs-keyword">or</span>
+
+search <span class="hljs-number">1</span>,<span class="hljs-number">008</span>,<span class="hljs-number">981</span>,<span class="hljs-number">770</span>;<span class="hljs-number">100</span>;weapon code
+
+refine <span class="hljs-number">1</span>,<span class="hljs-number">008</span>,<span class="hljs-number">981</span>,<span class="hljs-number">770</span>;<span class="hljs-number">100</span>
+
+edit look below
+
+edit <span class="hljs-keyword">for</span> this hack = <span class="hljs-number">2</span>,<span class="hljs-number">139</span>,<span class="hljs-number">000</span>,<span class="hljs-number">000</span> <span class="hljs-keyword">or</span> <span class="hljs-number">2</span>,<span class="hljs-number">139</span>,<span class="hljs-number">666</span>,<span class="hljs-number">666</span>
+
+<span class="hljs-comment">-- Fast reload + deadeye hack</span>
+
+search <span class="hljs-number">1</span>,<span class="hljs-number">008</span>,<span class="hljs-number">981</span>,<span class="hljs-number">770</span>;<span class="hljs-number">1</span>,<span class="hljs-number">110</span>,<span class="hljs-number">704</span>,<span class="hljs-number">128</span>;<span class="hljs-number">1</span>,<span class="hljs-number">036</span>,<span class="hljs-number">831</span>,<span class="hljs-number">949</span>
+
+refine <span class="hljs-number">1</span>,<span class="hljs-number">008</span>,<span class="hljs-number">981</span>,<span class="hljs-number">770</span>
+
+edit <span class="hljs-number">1</span>,<span class="hljs-number">036</span>,<span class="hljs-number">840</span>,<span class="hljs-number">000</span> <span class="hljs-keyword">or</span> <span class="hljs-number">1</span>,<span class="hljs-number">056</span>,<span class="hljs-number">900</span>,<span class="hljs-number">000</span> <span class="hljs-keyword">or</span> <span class="hljs-number">1</span>,<span class="hljs-number">045</span>,<span class="hljs-number">200</span>,<span class="hljs-number">000</span>
+
+<span class="hljs-comment">-- Underground bug hack</span>
+
+search <span class="hljs-number">1034147594</span>;<span class="hljs-number">1051931443</span>;<span class="hljs-number">1062836634</span>
+
+refine <span class="hljs-number">1062836634</span>
+
+edit <span class="hljs-number">1</span>,<span class="hljs-number">090</span>,<span class="hljs-number">000</span>,<span class="hljs-number">000</span>
+
+<span class="hljs-comment">-- Fly bug hack</span>
+
+search <span class="hljs-number">1034147594</span>;<span class="hljs-number">1051931443</span>;<span class="hljs-number">1062836634</span>
+
+refine <span class="hljs-number">1062836634</span>
+
+edit <span class="hljs-number">-1</span>,<span class="hljs-number">060</span>,<span class="hljs-number">000</span>,<span class="hljs-number">000</span>
+
+<span class="hljs-comment">-- Wall bug hack</span>
+
+search <span class="hljs-number">1008981770</span>;<span class="hljs-number">1061997773</span>;<span class="hljs-number">3204448256</span>
+
+refine <span class="hljs-number">3204448256</span>
+
+edit <span class="hljs-number">2</span>,<span class="hljs-number">139</span>,<span class="hljs-number">000</span>,<span class="hljs-number">000</span>
+
+<span class="hljs-comment">-- Aim bot hack</span>
+
+search <span class="hljs-number">1082130432</span>;<span class="hljs-number">1120403456</span>;<span class="hljs-number">1045220557</span>
+
+refine <span class="hljs-number">1120403456</span>
+
+edit <span class="hljs-number">15000</span>
+
+<span class="hljs-comment">-- Fast run hack</span>
+
+search <span class="hljs-number">1008981770</span>;<span class="hljs-number">1088421888</span>
+
+refine <span class="hljs-number">1008981770</span>
+
+edit <span class="hljs-number">1</span>,<span class="hljs-number">028</span>,<span class="hljs-number">000</span>,<span class="hljs-number">000</span>
+
+<span class="hljs-comment">-- NOTES :</span>
+*Filter = Depends on items found
+*Value <span class="hljs-built_in">type</span> = DWORD
+
+<span class="hljs-comment">-- END</span></code></pre>
+<textarea spellcheck="false" style="display: none;"></textarea>
+
+
+</body></html>

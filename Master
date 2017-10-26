@@ -1,0 +1,113 @@
+-- SuperHack for Crisis Action v2.5-0 by Aufar_R
+
+-- LIST OF CODES
+
+-- Time jump
+
+input = 5:0 or 300
+
+-- Wall hack
+
+search 1008981770;1017370378
+
+refine 1008981770
+
+edit 1,075,750,000
+
+-- 1Hit hack
+
+search 1008981770;100;1061997773
+
+refine 1,008,981,770;100
+
+edit look below
+
+clear results
+
+search 1008981770;100;1053609165
+
+refine 1,008,981,770;100
+
+edit look below
+
+clear results
+
+search -1,082,130,432;100;1,036,831,949
+
+refine -1,082,130,432;100
+
+edit look below
+
+edit for this hack = 2,139,000,000 or 2,139,666,666
+
+-- Custom 1Hit hack
+
+search -1,082,130,432;100;weapon code
+
+refine -1,082,130,432;100
+
+edit look below
+
+or
+
+search 1,008,981,770;100;weapon code
+
+refine 1,008,981,770;100
+
+edit look below
+
+edit for this hack = 2,139,000,000 or 2,139,666,666
+
+-- Fast reload + deadeye hack
+
+search 1,008,981,770;1,110,704,128;1,036,831,949
+
+refine 1,008,981,770
+
+edit 1,036,840,000 or 1,056,900,000 or 1,045,200,000
+
+-- Underground bug hack
+
+search 1034147594;1051931443;1062836634
+
+refine 1062836634
+
+edit 1,090,000,000
+
+-- Fly bug hack
+
+search 1034147594;1051931443;1062836634
+
+refine 1062836634
+
+edit -1,060,000,000
+
+-- Wall bug hack
+
+search 1008981770;1061997773;3204448256
+
+refine 3204448256
+
+edit 2,139,000,000
+
+-- Aim bot hack
+
+search 1082130432;1120403456;1045220557
+
+refine 1120403456
+
+edit 15000
+
+-- Fast run hack
+
+search 1008981770;1088421888
+
+refine 1008981770
+
+edit 1,028,000,000
+
+-- NOTES :
+*Filter = Depends on items found
+*Value type = DWORD
+
+-- END
